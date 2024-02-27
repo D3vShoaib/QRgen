@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+nav {
+    display: flex;
+    background-color: #191919;
+    padding: 15px 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a.brand {
+    color: #2b9af5; /* Your brand color, adjust as needed */
+    font-family: 'Pixelify Sans', sans-serif; /* Added font-family */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #191919;
+}
+
+.container, .profile-container {
+    width: 400px;
+    height: 400px; /* Set the height to 400px for both containers */
+    padding: 25px 35px;
+    position: fixed; /* Fixed positioning */
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0D0D0D;
+    border-radius: 10px;
+}
+
+.container {
+    left: 50px; /* Set the left position for the QR container */
+}
+
+.profile-container {
+    left: 530px; /* Set the right position for the profile container */
+}
+
+.container p, .profile-container p {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.container input {
+    width: calc(100% - 20px); /* Adjust the width considering padding */
+    height: 50px;
+    border: 1px solid white;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px 0; /* Adjust margin */
+    border-radius: 5px;
+}
+
+.container button {
+    width: calc(100% - 20px); /* Adjust the width considering padding */
+    height: 50px;
+    background: #2b9af5;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+#imgBox {
+    width: calc(100% - 20px); /* Adjust the width considering padding */
+    height: 200px; /* Set the height to 200px for the QR container */
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgBox img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+#imgBox.show-img {
+    width: 150px;
+    height: 150px;
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid white;
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+}
+
+/* Positioning the circular profile boxes */
+.profile-container {
+    position: fixed; /* Fixed positioning */
+    top: 50%;
+    right: 25px; /* Set the right position for the profile container */
+    transform: translateY(-50%);
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-box p {
+    color: white;
+    text-align: right;
+    margin: 0;
+}

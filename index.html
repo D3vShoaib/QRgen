@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="brand">QR Code Generator</a>
+      </nav>
+    
+    <div class="container">
+        <p>Enter your text or URL</p>
+        <input type="text" placeholder="Text or URL" id="qrText">
+        
+        <div id="imgBox">
+            <img src="" id="qrImage" alt="QR Code">
+        </div>
+
+        <button onclick="getQRcode()">Generate QR Code</button>
+    </div>
+
+    <!-- Circular Profile Picture Boxes -->
+    <div class="profile-container">
+        <div class="profile-box">
+            <img src="profile1.png" alt="Profile Picture">
+            <p>Shoaib Ahmad</p>
+        </div>
+        <div class="profile-box">
+            <img src="profile2.png" alt="Profile Picture">
+            <p>Moahmmad Ahmad</p>
+        </div>
+        <div class="profile-box">
+            <img src="profile3.png" alt="Profile Picture">
+            <p>Krishna Sahu</p>
+        </div>
+    </div>
+
+    <!-- JS File -->
+    <script src="./script.js"></script>
+</body>
+</html>
